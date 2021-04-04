@@ -3,11 +3,11 @@ import Tarea from './Tarea';
 
 const ListadoTareas = () => {
      const tareasProyecto = [
-          { nombre: "Elegir Plataforma", estado: true },
-          { nombre: "Elegir Colores", estado: false },
-          { nombre: "Elegir Plataforma de Pago", estado: false },
-          { nombre: "Elegir Hosting", estado: true }
-     ]
+          { nombre: 'Elegir Plataforma', estado: true },
+          { nombre: 'Elegir Colores', estado: false },
+          { nombre: 'Elegir Plataforma de Pago', estado: false },
+          { nombre: 'Elegir Hosting', estado: true }
+     ];
 
      return (
 
@@ -19,13 +19,11 @@ const ListadoTareas = () => {
                     {tareasProyecto.length === 0
                          ? (<li className="tarea"><p>No hay tareas</p></li>)
                          :
-
                          tareasProyecto.map(tarea => (
                               <Tarea
                                    tarea={tarea}
                               />
                          ))
-
                     }
                </ul>
 

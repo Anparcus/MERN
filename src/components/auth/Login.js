@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Login = () => {
   //State para iniciar sesión
   const [usuario, guardarUsuario] = useState({
-    email: "",
-    password: "",
+    email: '',
+    password: '',
   });
 
   //Extraer Usuario
@@ -19,7 +19,7 @@ const Login = () => {
   };
 
   //Cuando el usuario quiere iniciar sesión
-  const onSubmit = (e) => {
+  const onSubmit = e => {
     e.preventDefault();
 
     //Validar que no haya campos Vacios

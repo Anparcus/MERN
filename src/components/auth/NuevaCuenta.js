@@ -4,24 +4,24 @@ import { Link } from "react-router-dom";
 const NuevaCuenta = () => {
   //State para iniciar sesión
   const [usuario, guardarUsuario] = useState({
-    nombre: "",
-    email: "",
-    password: "",
-    confirmar: "",
+    nombre: '',
+    email: '',
+    password: '',
+    confirmar: '',
   });
 
   //Extraer Usuario
   const { nombre, email, password, confirmar } = usuario;
 
-  const onChange = (e) => {
+  const onChange = e => {
     guardarUsuario({
       ...usuario,
       [e.target.name]: e.target.value,
-    });
-  };
+    })
+  }
 
   //Cuando el usuario quiere iniciar sesión
-  const onSubmit = (e) => {
+  const onSubmit = e => {
     e.preventDefault();
 
     //Validar que no haya campos Vacios

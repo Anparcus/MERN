@@ -1,10 +1,10 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Login from "./components/auth/Login";
-import NuevaCuenta from "./components/auth/NuevaCuenta";
-import Proyectos from "./components/proyectos/Proyectos";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Login from './components/auth/Login';
+import NuevaCuenta from './components/auth/NuevaCuenta';
+import Proyectos from './components/proyectos/Proyectos';
 
-import ProyectoState from './constext/proyectos/proyectoState';
+import ProyectoState from './context/proyectos/proyectoState';
 
 function App() {
   return (
