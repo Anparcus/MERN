@@ -1,9 +1,4 @@
 import React, { useReducer } from 'react';
-
-import { v4 as uuidv4 } from 'uuid';
-
-import proyectoContext from './proyectoContext';
-import proyectoReducer from './proyectoReducer';
 import {
      FORMULARIO_PROYECTO,
      OBTENER_PROYECTOS,
@@ -11,6 +6,12 @@ import {
      VALIDAR_FORMULARIO,
      PROYECTO_ACTUAL
 } from '../../types';
+
+import { v4 as uuidv4 } from 'uuid';
+
+import proyectoContext from './proyectoContext';
+import proyectoReducer from './proyectoReducer';
+
 
 
 

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   //State para iniciar sesión
@@ -11,12 +11,12 @@ const Login = () => {
   //Extraer Usuario
   const { email, password } = usuario;
 
-  const onChange = (e) => {
+  const onChange = e => {
     guardarUsuario({
       ...usuario,
-      [e.target.name]: e.target.value,
-    });
-  };
+      [e.target.name]: e.target.value
+    })
+  }
 
   //Cuando el usuario quiere iniciar sesión
   const onSubmit = e => {
@@ -69,6 +69,6 @@ const Login = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Login;

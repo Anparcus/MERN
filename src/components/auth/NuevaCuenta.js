@@ -7,7 +7,7 @@ const NuevaCuenta = () => {
     nombre: '',
     email: '',
     password: '',
-    confirmar: '',
+    confirmar: ''
   });
 
   //Extraer Usuario
@@ -31,7 +31,7 @@ const NuevaCuenta = () => {
     //Los 2 password iguales
 
     //Pasarlo al action
-  };
+  }
 
   return (
     <div className="form-usuario">
