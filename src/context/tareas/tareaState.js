@@ -26,6 +26,7 @@ const TareaState = props => {
       ],
    }
 
+
    //crea el dispatch y state
    const [state, dispatch] = useReducer(TareaReducer, initialState);
 
