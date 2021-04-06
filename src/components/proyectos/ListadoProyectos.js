@@ -5,7 +5,7 @@ import proyectoContext from '../../context/proyectos/proyectoContext';
 const ListadoProyectos = () => {
 
 
-        //Extraer Proyectos
+        //Extraer Proyectos de state inicial
         const proyectosContext = useContext(proyectoContext);
         const { proyectos, obtenerProyectos } = proyectosContext;
 
@@ -16,7 +16,7 @@ const ListadoProyectos = () => {
         }, [])
 
         //Revisar si proyectos tiene contenido
-        if (proyectos.length === 0) return null;
+        if (proyectos.length === 0) return <p>No hay proyectos, comienza creando uno</p>;
 
 
 
