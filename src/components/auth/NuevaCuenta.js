@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import AlertaContext from '../../context/alertas/alertaContext';
 
 const NuevaCuenta = () => {
+
+  //Extraer los valores del context
+  const alertaContext = useContext(AlertaContext);
+  const { alerta, mostrarAlerta } = alertaContext;
+
   //State para iniciar sesión
   const [usuario, guardarUsuario] = useState({
     nombre: '',
@@ -35,6 +41,7 @@ const NuevaCuenta = () => {
 
   return (
     <div className="form-usuario">
+      {alerta ? (<div className={`alerta ${alerta.categoria}`}>{alerta.msg}</div>) : null}
       <div className="contenedor-form sombra-dark">
         <h1>Obtener una Cuenta</h1>
         <form onSubmit={onSubmit}>
