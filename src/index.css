@@ -107,6 +107,12 @@ a {
     background-color: transparent;
 }
 
+.btn-cerrar-sesion {
+    color: var(--blanco);
+    padding: 8px 15px;
+    border: 1px solid white;
+}
+
 @media (min-width: 768px) {
     .contenedor-app {
         display: flex;
